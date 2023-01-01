@@ -9,7 +9,7 @@ CREATE OR REPLACE TABLE login_masuk (
 	username VARCHAR(30),
 	PASSWORD VARCHAR(100)
 );
-ALTER TABLE login_masuk CHANGE PASSWORD PASSWORD VARCHAR(1000)
+ALTER TABLE login_masuk CHANGE PASSWORD password VARCHAR(1000);
 
 CREATE OR REPLACE TABLE informasi_beranda (
 	id INT AUTO_INCREMENT PRIMARY KEY,
@@ -30,7 +30,7 @@ CREATE OR REPLACE TABLE admin_alquran(
 	username VARCHAR(30),
 	PASSWORD VARCHAR(100)
 );
-ALTER TABLE admin_alquran CHANGE PASSWORD PASSWORD VARCHAR(1000);
+ALTER TABLE admin_alquran CHANGE PASSWORD password VARCHAR(1000);
 
 INSERT INTO admin_alquran VALUES("","Ganteng","123");
 
@@ -42,7 +42,7 @@ CREATE OR REPLACE TABLE soal(
 	pilihan_C TEXT,
 	pilihan_D TEXT,
 	jawaban TEXT
-	);  
+);  
 CREATE OR REPLACE TABLE suroh_alquran (
 	suroh INT AUTO_INCREMENT PRIMARY KEY,
 	nama_suroh VARCHAR(100)
@@ -66,4 +66,3 @@ INSERT INTO ayat_alquran VALUES
 (3,"وَمِنۡ شَرِّ غَاسِقٍ اِذَا وَقَبَۙ‌","3. dan dari kejahatan malam apabila telah gelap gulita,",2),
 (4,"وَمِنۡ شَرِّ النَّفّٰثٰتِ فِى الۡعُقَدِۙ","4. dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya),",2),
 (5,"وَمِنۡ شَرِّ حَاسِدٍ اِذَا حَسَدَ",'5. dan dari kejahatan orang yang dengki apabila dia dengki.',2);
-
