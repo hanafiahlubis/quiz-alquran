@@ -1,6 +1,5 @@
 CREATE DATABASE quran;
 USE quran;
-
 CREATE OR REPLACE TABLE login_masuk (
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	nama_lengkap VARCHAR(30),
@@ -9,7 +8,7 @@ CREATE OR REPLACE TABLE login_masuk (
 	username VARCHAR(30),
 	PASSWORD VARCHAR(100)
 );
-ALTER TABLE login_masuk CHANGE PASSWORD password VARCHAR(1000);
+ALTER TABLE login_masuk CHANGE PASSWORD PASSWORD VARCHAR(1000);
 
 CREATE OR REPLACE TABLE informasi_beranda (
 	id INT AUTO_INCREMENT PRIMARY KEY,
@@ -42,7 +41,7 @@ CREATE OR REPLACE TABLE soal(
 	pilihan_C TEXT,
 	pilihan_D TEXT,
 	jawaban TEXT
-);  
+	);  
 CREATE OR REPLACE TABLE suroh_alquran (
 	suroh INT AUTO_INCREMENT PRIMARY KEY,
 	nama_suroh VARCHAR(100)
