@@ -14,7 +14,7 @@ import {
   getDaftar,
   getProfil,
 } from "./routes/al-quran-routes.js";
-import login,{me} from "./routes/auth-routes.js";
+import login, { me } from "./routes/auth-routes.js";
 
 const app = express();
 
@@ -56,3 +56,5 @@ app.get("/api/get/suroh", getDaftar);
 app.get("/api/user/al-qur1an/:id", getQuran);
 app.get("/api/me", me);
 app.listen(3000);
+
+export default app;

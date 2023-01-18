@@ -1,9 +1,9 @@
 import mariadb from 'mariadb';
 
 const pool = mariadb.createPool({
-    host : "localhost",
-    user : "root",
-    database : "quran"
+    host: "localhost",
+    user: "root",
+    database: "quran"
 });
 
 const conn = await pool.getConnection();
